@@ -104,25 +104,27 @@
 <div class="row">
 <div class="col-md-8">
 <div class="category_section mobile">
-    <!----article_title------>
+    {% for article in articles_list %}
+    <!----article-1----->
     <div class="category_article_wrapper">
         <div class="row">
             <div class="col-md-6">
                 <span class="tag purple">Mobile</span>
 
                 <div class="category_article_title">
-                    <h2><a href= {{ link }} target="_blank"> {{ title }} </a></h2>
+                    <h2><a href= {{article['url']}} target="_blank"> {{ article['title'] }} </a></h2>
                 </div>
                 <!----category_article_title------>
                 <div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
                 <!----category_article_date------>
                 <div class="category_article_content">
-                    {{ summary }}
+                    {{ article['description'] }}
                 </div>
                 <!----category_article_content------>
             </div>
         </div>
     </div>
+    {% endfor %}
 </div>
 
 </div>
