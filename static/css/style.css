@@ -209,7 +209,7 @@ section {
     letter-spacing: 0.8px;
 }
 
-.header-section .date {
+.header-section #date {
     border-bottom: 1px solid #000;
     padding-bottom: 15px;
 }
