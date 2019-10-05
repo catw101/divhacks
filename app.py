@@ -8,8 +8,9 @@ wikipedia.set_lang('simple')
 
 @app.route('/', methods=['GET'])
 def main():
-    page_url = wikipedia.search('')
-    return render_template('index.html')
+    page_title = wikipedia.search('tropical storm barry')[0]
+    page = wikipedia.page(page_title)
+    return render_template('index.html', title=page_title, link=page.url, summary=page.summary)
 
 
 if __name__ == '__main__':
