@@ -115,12 +115,13 @@
     <div class="article_title header_purple">
         <h2><a href="category.html" target="_self">News Feed</a></h2>
     </div>
+    {% set ns = namespace(i = 0) %}
     {% for article in articles_list %}
     <!----article-1----->
     <div class="category_article_wrapper">
         <div class="row">
             <div class="col-md-6">
-                <span class="tag purple">Mobile</span>
+                <span class="tag purple">{{tags[ns.i]}}</span>
 
                 <div class="category_article_title">
                     <h2><a href= {{article[0]['url']}} target="_blank"> {{ article[0]['title'] }} </a></h2>
@@ -134,6 +135,7 @@
                 <!----category_article_content------>
             </div>
         </div>
+        {% set ns.i = ns.i + 1 %}
     </div>
     {% endfor %}
 
