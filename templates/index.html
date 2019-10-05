@@ -32,7 +32,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
+
 	<script>
 		function initialize() {
 			var today = new Date();
@@ -104,25 +104,31 @@
 <div class="row">
 <div class="col-md-8">
 <div class="category_section mobile">
-    <!----article_title------>
+    <div class="article_title header_purple">
+        <h2><a href="category.html" target="_self">Mobile</a></h2>
+    </div>
+    {% for article in articles_list %}
+    <!----article-1----->
     <div class="category_article_wrapper">
         <div class="row">
             <div class="col-md-6">
                 <span class="tag purple">Mobile</span>
 
                 <div class="category_article_title">
-                    <h2><a href= {{ link }} target="_blank"> {{ title }} </a></h2>
+                    <h2><a href= {{article[0]['url']}} target="_blank"> {{ article[0]['title'] }} </a></h2>
                 </div>
                 <!----category_article_title------>
                 <div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
                 <!----category_article_date------>
                 <div class="category_article_content">
-                    {{ summary }}
+                    {{ article[0]['description'] }}
                 </div>
                 <!----category_article_content------>
             </div>
         </div>
     </div>
+    {% endfor %}
+
 </div>
 
 </div>
