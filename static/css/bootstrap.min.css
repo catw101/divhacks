@@ -81,7 +81,8 @@ sub {
 }
 
 img {
-    border: 0
+    border: 0;
+	width: 15%;
 }
 
 svg:not(:root) {
@@ -230,7 +231,7 @@ td, th {
     }
 
     img {
-        max-width: 100% !important
+        max-width: 15% !important
     }
 
     h2, h3, p {
@@ -1384,7 +1385,8 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    vertical-align: middle;
+	width: 15%;
 }
 
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
