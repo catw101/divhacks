@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5df35f7b-7f44-4994-967f-a597b0c4c29d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/divhacks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/divhacks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/math.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/math.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/politics.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/politics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/science.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/science.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/tech.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tech.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,6 +70,18 @@
       <option name="presentableId" value="Default" />
       <updated>1570318623321</updated>
     </task>
+    <task id="LOCAL-00001" summary="added readme">
+      <created>1570320439673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570320439673</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="added readme" />
   </component>
 </project>
