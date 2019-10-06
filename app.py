@@ -19,14 +19,20 @@ def main():
     articles.append(politics_article)
     articles.append(tech_article)
     articles.append(science_article)
-    return render_template('index.html', articles_list=articles)
+    tag_list = ['Math', 'Politics', 'Tech', 'Science']
+    return render_template('index.html', articles_list=articles, tags=tag_list)
 
 
 def get_wiki(keyword):
+    #TODO: return simple wikipedia page based on article keyword
     return None
 
 
 def get_keyword(article):
+    #TODO: return article keyword
+    # Commented code is example for simple wikipedia data pull
+    # page_title = wikipedia.search('tropical storm barry')[0]
+    # page = wikipedia.page(page_title)
     return None
 
 
